@@ -1,0 +1,95 @@
+/* Full page background */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Box containing logo and form */
+.login-box {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+/* Left logo section */
+.login-logo {
+  flex: 1;
+  /* background-color: #f5f5f5; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+   position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 120px;   /* adjust size as you like */
+  height: auto;
+  z-index: 10;
+}
+
+.login-logo img {
+  width: 180px;
+  height: auto;
+}
+
+/* Right login form section */
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.login-form button {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form .B1 {
+  background-color: #027bfd;
+  color: rgb(249, 244, 244);
+}
+
+.login-form button:hover{
+  background-color: rgb(85, 155, 247);
+}
+.login-form button:last-child {
+  margin-right: 0;
+  background-color: #d9d5d5;
+}
+
+.login-form a {
+  color: #007bff;
+  text-decoration: none;
+}
