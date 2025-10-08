@@ -13,8 +13,8 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 700px;
-  max-width: 90%;
+  
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@
    position: absolute;
   top: 20px;
   left: 30px;
-  width: 120px;   /* adjust size as you like */
+  width: 120px;  
   height: auto;
   z-index: 10;
 }
@@ -41,11 +41,13 @@
 
 /* Right login form section */
 .login-form {
-  flex: 1;
-  display: flex;
+   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 80px;
   justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* optional: make form slightly transparent */
+  border-radius: 10px;
 }
 
 .login-form h2 {
@@ -56,8 +58,8 @@
 .login-form input {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
+  border-bottom: 1px solid #ff0000;
+  /* border-radius: 5px; */
   font-size: 1rem;
 }
 
@@ -65,6 +67,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+
 }
 
 .login-form button {
@@ -74,11 +77,13 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+ 
 }
 
 .login-form .B1 {
-  background-color: #027bfd;
-  color: rgb(249, 244, 244);
+  color: rgb(253, 252, 252);
+  font-weight: bold;
+  
 }
 
 .login-form button:hover{
@@ -86,10 +91,36 @@
 }
 .login-form button:last-child {
   margin-right: 0;
-  background-color: #d9d5d5;
+  background-color:#a91b43;
+  width: 100px;
+ 
 }
 
 .login-form a {
   color: #007bff;
   text-decoration: none;
+}
+.Welcome-Box{
+  color: white;
+  background-color: #a91b43;
+  text-align: center;
+  width: 270px;
+  height: 150px;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-180%);
+  z-index: 10;
+  border-radius: 10px;
+  padding-left: 10px;
+ 
+  font-weight: bold;
+}
+.Welcome-Box p{
+  font-size: 15px;
+  margin: 0;
+}
+.Welcome-Box h2{
+  letter-spacing: 8px;
 }
