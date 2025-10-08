@@ -22,7 +22,8 @@ body {
   align-items: center;
   
   justify-content: center;
-  background: url("../src/assets/Images/image.png");
+  background: linear-gradient(rgb(114, 88, 88,0.5),rgb(114, 88, 88,0.5)),
+  url("../src/assets/Images/background-img.jpg");
   background-size: cover;
    background-repeat: no-repeat;
   }
