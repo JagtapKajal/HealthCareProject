@@ -24,23 +24,33 @@
   position: relative;
   z-index: 1;
   background: #fff;
-  padding: 40px 50px;
+  padding: 60px 50px;
   border-radius: 14px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   width: 360px;
   text-align: center;
- 
+}
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 1.2rem;
+  color: #000; /* black color */
+  pointer-events: none; /* so it doesn’t block typing */
 }
 
+/* Adjust padding so text doesn’t overlap icon */
+.input-group input {
+  padding-left: 35px;
+}
 /* ===== Logo ===== */
 .logo {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 10px;
+  left: 12px;
   display: flex;
-  margin: 10px;
+  margin: 5px;
   }
-
 
 .logo img {
   width: 90px;
@@ -49,7 +59,7 @@
 .logo h2{
   margin-left: 10px;
   color: #a91b43;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 /* ===== Welcome Box ===== */
@@ -58,7 +68,7 @@
   color: white;
   border-radius: 10px;
   padding: 20px 0;
-  top: 42%;
+  top: 39%;
   align-items: center;
   justify-content: center;
   width: 70%;
@@ -86,40 +96,42 @@ justify-content: center;
 }
 
 /* ===== Floating Inputs ===== */
-.input-group {
+.input-group1 {
   position: relative;
   margin: 20px 0;
 }
 
-.input-group input {
-  width: 100%;
-  padding: 12px 10px;
+.input-group1 input {
+  width: 72%;
+  padding: 12px 26px;
   font-size: 1rem;
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
   background: transparent;
   transition: 0.3s;
+  margin-left: 20px;
+
 }
 
-.input-group label {
+.input-group1 label {
   position: absolute;
   top: 12px;
-  left: 10px;
+  left: 42px;
   color: #999;
   font-size: 0.95rem;
   pointer-events: none;
   transition: all 0.3s ease;
 }
 
-.input-group input:focus {
+.input-group1 input:focus {
   border-bottom: 2px solid #6c3cf0;
 }
 
-.input-group input:focus+label,
-.input-group input:not(:placeholder-shown)+label {
+.input-group1 input:focus+label,
+.input-group1 input:not(:placeholder-shown)+label {
   top: -10px;
-  left: 8px;
+  left: 35px;
   font-size: 0.8rem;
 
 }
@@ -177,13 +189,6 @@ justify-content: center;
 
 .register-text a:hover {
   text-decoration: underline;
-}
-
-/* ===== Footer ===== */
-footer {
-  font-size: 0.75rem;
-  color: #666;
-  margin-top: 25px;
 }
 
 /* ===== Responsive ===== */
