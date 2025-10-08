@@ -1,7 +1,6 @@
 /* Fullscreen background */
 .registration-page {
-  background-image: url('/your-background.jpg');
-  /* Replace with your actual image path */
+ 
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -16,7 +15,7 @@
   background: rgba(255, 255, 255, 0.95);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 1.5rem;
   width: 600px;
   max-width: 90%;
   backdrop-filter: blur(5px);
@@ -27,8 +26,8 @@
   color: white;
   border-radius: 10px;
   padding: 20px 0;
-  top: 25%;
-  
+  top: 24%;
+  margin-left: 20%;
   align-items: center;
   justify-content: center;
   width: 50%;
@@ -60,48 +59,50 @@
   flex-wrap: wrap;
 }
 
-.input-group {
-  position: relative;
-  flex: 1;
-  min-width: 200px;
+/* .input-group1 { */
+  /* position: relative; */
+  /* flex: 1; */
+  /* min-width: 200px; */
+/* } */
+/*  */
+/* .input-group1 .icon { */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 10px; */
+  /* transform: translateY(-50%); */
+  /* pointer-events: none; */
+  /* font-size: 1.1rem; */
+/* } */
+/*  */
+/* .input-group input { */
+  /* width: 85%; */
+  /* padding: 10px 10px 10px 35px; */
+  /* border: none; */
+  /* border-bottom: 2px solid #ccc; */
+  /* outline: none; */
+  /* font-size: 1rem; */
+  /* transition: border-color 0.3s ease; */
+/* } */
+/*  */
+/* .input-group input:focus { */
+  /* border-color: #a91b43; */
+/* } */
+.button{
+  background: #a91b43; 
+color: white; 
+padding: 12px; 
+border: none; 
+border-radius: 8px; 
+font-size: 1rem; 
+margin:auto;
+margin-left: 210px; 
+margin-right: 210px; 
+cursor: pointer; 
+transition: background 0.3s ease; 
 }
 
-.input-group .icon {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-  font-size: 1.1rem;
-}
-
-.input-group input {
-  width: 80%;
-  padding: 10px 10px 10px 35px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  outline: none;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.input-group input:focus {
-  border-color: #a91b43;
-}
-
-button[type="submit"] {
-  background: #a91b43;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background: #a91b43;
+.button:hover {
+  background: #e02157;
 }
 
 .login-text {
@@ -110,7 +111,7 @@ button[type="submit"]:hover {
 }
 
 .login-text a {
-  color: #6a1b9a;
+  color: #a91b43;
   font-weight: bold;
   text-decoration: none;
 }
