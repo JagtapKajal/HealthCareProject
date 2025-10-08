@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.css";
-import logo from "../assets/Images/logo.jpg"; 
+import logo from "../assets/Images/logo.jpg";
 
 export default function LoginForm() {
   return (
@@ -10,15 +10,22 @@ export default function LoginForm() {
           <img src={logo} alt="Logo" />
         </div>
 
-       
         <form className="login-form">
-          <h2>Login</h2>
+          <div className="Welcome-Box">
+            {" "}
+            <h2>Welcome! </h2>
+            <p>Login By Entering the Information Below</p>{" "}
+          </div>
+
           <input type="email" placeholder="Email" required />
           <input type="password" placeholder="Password" required />
           <div className="button-group">
-            <button className="B1" type="submit">Login</button>
-            <button type="button">Cancel</button>
+            <button className="B1" type="submit">
+              Login 
+            </button>
+        
           </div>
+          
           <p>
             Don’t have an account? <a href="/register">Register</a>
           </p>
