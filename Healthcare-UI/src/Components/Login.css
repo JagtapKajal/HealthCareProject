@@ -29,6 +29,7 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   width: 360px;
   text-align: center;
+ 
 }
 
 /* ===== Logo ===== */
@@ -141,7 +142,7 @@ justify-content: center;
 
 /* ===== Button ===== */
 .login-btn {
-  width: 100%;
+  width: 150px;
   background-color: #a91b43;
   color: white;
   border: none;
@@ -169,7 +170,7 @@ justify-content: center;
 }
 
 .register-text a {
-  color: #6c3cf0;
+  color: #a91b43;
   font-weight: 600;
   text-decoration: none;
 }
