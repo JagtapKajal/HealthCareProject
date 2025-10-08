@@ -3,18 +3,53 @@ import "./registration.css";
 
 export default function Registration() {
   return (
-    <div className="register-container">
-      <form className="register-form">
-        <h2>Register</h2>
-        <input type="text" placeholder="Full Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <input type="password" placeholder="Confirm Password" required />
-        <button type="submit">Create Account</button>
-        <p>
-          Already have an account? <a href="/login">Login</a>
-        </p>
-      </form>
+    <div className="registration-page">
+      <div className="register-container">
+        <div className="register-header">
+          <h2>Registration</h2>
+          <p>Sign up by entering the information below</p>
+        </div>
+        <form className="register-form">
+          <div className="form-row">
+            <div className="input-group">
+              <span className="icon">👤</span>
+              <input type="text" placeholder="Firstname" required />
+            </div>
+            <div className="input-group">
+              <span className="icon">👤</span>
+              <input type="text" placeholder="Lastname" required />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="input-group">
+              <span className="icon">✉️</span>
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div className="input-group">
+              <span className="icon">📱</span>
+              <input type="tel" placeholder="Mobile Number" required />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="input-group">
+              <span className="icon">🔒</span>
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div className="input-group">
+              <span className="icon">🔒</span>
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+          </div>
+
+          <button type="submit">Sign up</button>
+
+          <p className="login-text">
+            Already have an account? <a href="/login">Login</a> here.
+          </p>
+        </form>
+      </div>
     </div>
   );
 }
