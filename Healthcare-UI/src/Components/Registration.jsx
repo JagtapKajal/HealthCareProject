@@ -11,39 +11,47 @@ export default function Registration() {
         </div>
         <form className="register-form">
           <div className="form-row">
-            <div className="input-group">
+            <div className="input-group1">
               <span className="icon">👤</span>
-              <input type="text" placeholder="Firstname" required />
+              <input type="text" placeholder=" " required />
+              <label htmlFor="Firstname">Firstname *</label>
             </div>
-            <div className="input-group">
+            <div className="input-group1">
               <span className="icon">👤</span>
-              <input type="text" placeholder="Lastname" required />
+              <input type="text" placeholder="" required />
+              <label htmlFor="Lastname">Lastname *</label>
             </div>
           </div>
 
           <div className="form-row">
-            <div className="input-group">
+            <div className="input-group1">
               <span className="icon">✉️</span>
-              <input type="email" placeholder="Email" required />
+              <input type="email" placeholder=" " required />
+              <label htmlFor="Email">Email *</label>
             </div>
-            <div className="input-group">
+            <div className="input-group1">
               <span className="icon">📱</span>
-              <input type="tel" placeholder="Mobile Number" required />
+              <input type="tel" placeholder=" " required />
+              <label htmlFor="Mobile Number">Mobile Number *</label>
             </div>
           </div>
 
           <div className="form-row">
-            <div className="input-group">
+            <div className="input-group1">
               <span className="icon">🔒</span>
-              <input type="password" placeholder="Password" required />
+              <input type="password" placeholder=" " required />
+              <label htmlFor="Password">Password *</label>
             </div>
-            <div className="input-group">
+            <div className="input-group1">
               <span className="icon">🔒</span>
-              <input type="password" placeholder="Confirm Password" required />
+              <input type="password" placeholder=" " required />
+              <label htmlFor="Confirm Password">Confirm Password *</label>
             </div>
           </div>
 
-          <button type="submit">Sign up</button>
+          <button className="button" type="submit">
+            Sign up
+          </button>
 
           <p className="login-text">
             Already have an account? <a href="/login">Login</a> here.
