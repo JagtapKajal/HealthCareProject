@@ -17,16 +17,17 @@ export default function LoginForm() {
             </div>
         <div className="login-box">
           <form className="login-form">
+<div className="input-group1">
+  <span className="icon">✉️</span>
+  <input type="email" id="email" required placeholder=" " />
+  <label htmlFor="email">Email / Mobile *</label>
+</div>
+<div className="input-group1">
+  <span className="icon">🔒</span>
+  <input type="password" id="password" required placeholder=" " />
+  <label htmlFor="password">Password *</label>
+</div>
 
-            <div className="input-group">
-              <input type="email" id="email" required placeholder=" " />
-              <label htmlFor="email">Email / Mobile *</label>
-            </div>
-
-            <div className="input-group">
-              <input type="password" id="password" required placeholder=" " />
-              <label htmlFor="password">Password *</label>
-            </div>
 
             <div className="forgot-password">
               <a href="#">Forgot Password ?</a>
