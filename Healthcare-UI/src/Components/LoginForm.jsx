@@ -6,28 +6,27 @@ export default function LoginForm() {
   return (
     <>
       <div className="logo">
-        <img src={logo} alt="Logo" /> 
+        <img src={logo} alt="Logo" />
         <h2>Pune Munciple Corporation</h2>
       </div>
 
       <div className="login-page">
-            <div className="welcomebox">
-              <h2>Welcome !</h2>
-              <p>Login by entering the information below</p>
-            </div>
+        <div className="welcomebox">
+          <h2>Welcome !</h2>
+          <p>Login by entering the information below</p>
+        </div>
         <div className="login-box">
           <form className="login-form">
-<div className="input-group1">
-  <span className="icon">✉️</span>
-  <input type="email" id="email" required placeholder=" " />
-  <label htmlFor="email">Email / Mobile *</label>
-</div>
-<div className="input-group1">
-  <span className="icon">🔒</span>
-  <input type="password" id="password" required placeholder=" " />
-  <label htmlFor="password">Password *</label>
-</div>
-
+            <div className="input-group1">
+              <span className="icon">✉️</span>
+              <input type="email" id="email" required placeholder=" " />
+              <label htmlFor="email">Email / Mobile *</label>
+            </div>
+            <div className="input-group1">
+              <span className="icon">🔒</span>
+              <input type="password" id="password" required placeholder=" " />
+              <label htmlFor="password">Password *</label>
+            </div>
 
             <div className="forgot-password">
               <a href="#">Forgot Password ?</a>

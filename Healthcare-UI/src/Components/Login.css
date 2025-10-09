@@ -30,19 +30,23 @@
   width: 360px;
   text-align: center;
 }
+
 .icon {
   position: absolute;
   left: 10px;
   top: 12px;
   font-size: 1.2rem;
-  color: #000; /* black color */
-  pointer-events: none; /* so it doesn’t block typing */
+  color: #000;
+  /* black color */
+  pointer-events: none;
+  /* so it doesn’t block typing */
 }
 
 /* Adjust padding so text doesn’t overlap icon */
 .input-group input {
   padding-left: 35px;
 }
+
 /* ===== Logo ===== */
 .logo {
   position: absolute;
@@ -50,13 +54,13 @@
   left: 12px;
   display: flex;
   margin: 5px;
-  }
+}
 
 .logo img {
   width: 90px;
-} 
+}
 
-.logo h2{
+.logo h2 {
   margin-left: 10px;
   color: #a91b43;
   font-size: 25px;
@@ -74,7 +78,7 @@
   width: 70%;
   z-index: 10;
   position: absolute;
-  transform:translateY(-180%);
+  transform: translateY(-180%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -92,7 +96,7 @@
   opacity: 0.9;
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
 }
 
 /* ===== Floating Inputs ===== */
