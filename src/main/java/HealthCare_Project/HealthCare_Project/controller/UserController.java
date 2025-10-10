@@ -7,27 +7,39 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/Users")
+@CrossOrigin(origins = "http://localhost:5173")
 public class UserController {
 
     @Autowired
     private UserService userService;
-
     @PostMapping("/addUser")
-    public ResponseEntity<UserDetails> addUser(@RequestBody UserDetails user){
-        UserDetails adduser = userService.addUser(user);
-        return new ResponseEntity<>(adduser, HttpStatus.OK);
+    public ResponseEntity<String> findUserByEmailAndPassword(@RequestBody UserDetails loginRequest) {
+        boolean isValid = userService.findByUserEmailAndPassword(
+                loginRequest.getEmail(),
+                loginRequest.getPassword()
+        );
+
+        if (isValid) {
+            return new ResponseEntity<>("Login successful", HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Invalid credentials", HttpStatus.UNAUTHORIZED);
+        }
     }
+
 
     @PostMapping("/findUser")
-    public ResponseEntity<String> findUserByEmailAndPassword(@RequestBody String email4, String password1){
-        String userDetails = userService.findByUserEmailAndPassword(email4, password1);
-        return new ResponseEntity<>("login successful", HttpStatus.OK);
+    public ResponseEntity<String> loginUser(@RequestBody UserDetails loginRequest) {
+        boolean isValid = userService.findByUserEmailAndPassword(loginRequest.getEmail(), loginRequest.getPassword());
+        if (isValid) {
+            return ResponseEntity.ok("Login successful!");
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid username or password");
+        }
     }
+
+
 }
