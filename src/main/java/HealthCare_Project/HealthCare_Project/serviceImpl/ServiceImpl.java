@@ -19,13 +19,11 @@ public class ServiceImpl implements UserService {
     }
 
     @Override
-    public String findByUserEmailAndPassword(String email1, String password1) {
-        if (email1 != null) {
-            return "login faild";
-        }
-
-            UserDetails userDetails1 = userRepository.findByEmailAndPassword(email1, password1);
-            return "userDetails1";
+    public boolean findByUserEmailAndPassword(String email, String password) {
+        UserDetails user = userRepository.findByEmailAndPassword(email, password);
+        return user != null;
     }
+
+
 
 }
