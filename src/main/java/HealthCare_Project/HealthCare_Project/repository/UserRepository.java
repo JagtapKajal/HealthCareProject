@@ -5,5 +5,7 @@ import org.apache.catalina.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<UserDetails, Integer> {
+
+
     public UserDetails findByEmailAndPassword(String email, String password);
 }
