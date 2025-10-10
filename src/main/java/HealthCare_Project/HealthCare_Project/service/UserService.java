@@ -6,5 +6,5 @@ public interface UserService {
 
     public UserDetails addUser(UserDetails user);
 
-    public String  findByUserEmailAndPassword(String email1, String password1);
+    public boolean findByUserEmailAndPassword(String email, String password);
 }
